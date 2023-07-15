@@ -5,7 +5,7 @@
 }
 
 .hero .group {
-    width: 65%;
+    width: 75%;
 }
 
 .hero .sub {
@@ -35,18 +35,51 @@
     margin: -55px 135px;
 }
 
-.hero .sh1943 {
+.hero .rose {
     width: 30%;
     position: absolute;
     margin: -483px 421px;
     transform: rotate(298deg);
 }
 
+.hero .small {
+    font-family: Cormorant;
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin: -315px 800px;
+    position: absolute;
+}
+
 @media screen and (max-width: 800px) {
+    .hero .group {
+        width: 100%;
+    }
     .hero .sub {
-        font-size: 16px;
+        font-size: 4rem;
+        margin: -134px 23px;
+        position: absolute;
     }
     .hero .large {
-        font-size: 84px;
+        margin: -66px -7px;
+        font-size: 5rem;
+        font-weight: 300;
+        position: absolute;
+    }
+    .hero .moderate {
+        font-size: 4rem;
+        margin: 5px 50px;
+        position: absolute;
+    }
+    .hero .rose {
+        width: 60%;
+        transform: rotate(298deg);
+        position: absolute;
+        margin: -226px 129px;
+    }
+    .hero .small {
+        font-size: 1.5rem;
+        font-weight: 200;
+        position: absolute;
+        margin: -122px 312px;
     }
 }
