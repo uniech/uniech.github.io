@@ -55,31 +55,31 @@
         width: 100%;
     }
     .hero .sub {
-        font-size: 4rem;
+        font-size: 65px;
         margin: -134px 23px;
         position: absolute;
     }
     .hero .large {
         margin: -66px -7px;
-        font-size: 5rem;
+        font-size: 65px;
         font-weight: 300;
         position: absolute;
     }
     .hero .moderate {
-        font-size: 4rem;
-        margin: 5px 50px;
+        font-size: 60px;
+        margin: -13px 35px;
         position: absolute;
     }
     .hero .rose {
-        width: 60%;
-        transform: rotate(298deg);
+        width: 40%;
+        transform: rotate(312deg);
         position: absolute;
-        margin: -226px 129px;
+        margin: -178px 147px;
     }
     .hero .small {
-        font-size: 1.5rem;
+        font-size: 20px;
         font-weight: 200;
         position: absolute;
-        margin: -122px 312px;
+        margin: -153px 212px;
     }
 }
