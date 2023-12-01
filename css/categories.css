@@ -27,3 +27,8 @@
   background-color: var(--white-1);
   color: var(--black);
 }
+
+@font-face {
+  font-family: heartaffairsdemo;
+  src: url(themes/cupertino/source/fonts/heartaffairsdemo.otf);
+}

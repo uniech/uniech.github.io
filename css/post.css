@@ -3,7 +3,7 @@ body {
 }
 
 .post {
-  margin: 128px 0;
+  margin-top: 8rem;
 }
 
 .meta .categories {
@@ -24,20 +24,40 @@ body {
 }
 
 .meta .title {
-  font-size: 48px;
-  margin-top: 16px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1.2rem;
+  padding-left: 1rem;
 }
 
-
-
 .content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.t-text {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr; /* 三栏文字网格 */
-  font-size: 0.8rem;
-  text-align: justify;
-  line-height: 1.4211;
-  font-weight: 400;
-  letter-spacing: 0.012em;
+  grid-template-columns: 1fr 2fr 2fr;
+  gap: 1.5rem;
+  width: 100%;
+  padding-bottom: 5rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.text-imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.text-bigimg img{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .content p,
@@ -52,7 +72,6 @@ body {
 .content figure,
 /* only `.content>pre`, do not include <pre /> in <figure /> */
 .content>pre,
-.divider,
 .container,
 hr,
 .meta .title,
@@ -65,15 +84,8 @@ hr,
 .content > mjx-container,
 .content > .katex,
 .about {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 16px;
-}
-
-.content p img,
-.content .block-large img {
-  border-radius: 10px;
+  max-width: 100%;
+  margin: 0;
 }
 
 .content table,
@@ -360,13 +372,18 @@ body[data-color-scheme="dark"] .tags .icon {
   color: var(--grey);
 }
 
-.deshow {
-  grid-column: span 3;
-}
 
 @media screen and (max-width: 600px) {
   .content {
     display: block;
     /* @media 层级需要放在css样式表最下面，不然会被相同样式覆盖 */
+  }
+
+  .t-text {
+    grid-template-columns: 1fr;
+  }
+
+  .text-imgs {
+    grid-template-columns: 1fr;
   }
 }

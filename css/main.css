@@ -2,22 +2,38 @@
     transition: color 0.2s, background-color 0.2s;
 }
 
-
 body {
     margin: 0;
-    margin-top: 56px;
+    padding: 0;
     color: var(--black-2);
     background-color: var(--body-bg);
-    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Questrial", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cont_ttl01 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+} 
 
 a:link {
     color: var(--link);
     text-decoration: none;
+    transition: 0.35s;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+.worklist:hover {
+    text-decoration: none;
 }
 
 a:active {
@@ -31,19 +47,16 @@ a:visited {
 
 .container {
     max-width: 100%;
-    margin: auto;
-    padding: 0 16px;
+    padding: 0 1rem;
 }
 
 .section-title {
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 700;
-    letter-spacing: .004em;
-    margin-bottom: 24px;
-    color: var(--card-title);
+    font-size: 3rem;
+    text-align: right;
+    padding-bottom: 8rem;
 }
 
 .theme-command {
     display: none;
 }
+

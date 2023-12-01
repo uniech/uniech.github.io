@@ -1,53 +1,28 @@
 .hero {
-    height: calc(100vh - 56px);
-    display: grid;
-    place-items: center;
+    height: calc(100vh - 1rem);
+    display: flex;
+    align-items: end;
 }
 
 .hero .group {
-    width: 75%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .hero .sub {
-    font-family: DotGothic16;
-    text-transform: uppercase;
-    font-size: 8rem;
-    color: var(--black-2);
-    font-weight: 100;
-    margin: -50px 85px;
-    transition: font-size 0.5s;
+    padding-top: 4rem;
 }
 
 .hero .large {
-    font-size: 128px;
-    color: var(--black-2);
-    font-weight: 400;
-    margin: 0;
-    transition: font-size 0.5s;
+    text-align: right;
 }
 
-.hero .moderate {
-    font-family: Cormorant;
-    font-size: 8rem;
-    color: var(--black-2);
-    font-weight: 400;
-    font-style: italic;
-    margin: -55px 135px;
-}
-
-.hero .rose {
-    width: 30%;
-    position: absolute;
-    margin: -483px 421px;
-    transform: rotate(298deg);
-}
-
-.hero .small {
-    font-family: Cormorant;
-    font-size: 2.5rem;
-    font-weight: 200;
-    margin: -315px 800px;
-    position: absolute;
+.hero .bigtitle {
+    width: 40%;
+    align-self: flex-start;
 }
 
 @media screen and (max-width: 800px) {
@@ -55,15 +30,19 @@
         width: 100%;
     }
     .hero .sub {
-        font-size: 65px;
-        margin: -134px 23px;
-        position: absolute;
+        font-size: 1rem;
+    }
+    .hero .bwc{
+        top: 2px;
+        position: relative;
+        font-size: 1.55rem;
     }
     .hero .large {
-        margin: -66px -7px;
-        font-size: 65px;
-        font-weight: 300;
-        position: absolute;
+        margin: 0;
+    }
+    .hero .bigtitle {
+        width: 100%;
+        align-items: flex-end;
     }
     .hero .moderate {
         font-size: 60px;
@@ -71,7 +50,7 @@
         position: absolute;
     }
     .hero .rose {
-        width: 40%;
+        width: 200px;
         transform: rotate(312deg);
         position: absolute;
         margin: -178px 147px;

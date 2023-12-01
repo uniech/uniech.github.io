@@ -1,7 +1,7 @@
 body[data-color-scheme="auto"], body[data-color-scheme="light"] {
     --white-opacity-8: rgba(255, 255, 255, .8);
     --white-1-opacity-8: rgba(229.5, 229.5, 229.5, .8);
-    --white: #fff;
+    --white: #ffffff;
     --white-1: rgb(229.5, 229.5, 229.5);
     --white-2: rgb(204, 204, 204);
 
@@ -9,7 +9,7 @@ body[data-color-scheme="auto"], body[data-color-scheme="light"] {
 
     --black: #000;
     --black-2: rgb(51, 51, 51);
-    --black-4: rgb(102, 102, 102);
+    --black-4: rgb(51, 51, 51);
 
     --border-color: #8882;
 
@@ -24,7 +24,7 @@ body[data-color-scheme="auto"], body[data-color-scheme="light"] {
 
     --footer-link-grey: #515154;
 
-    --body-bg: #fbfbfd;
+    --body-bg: #ffffff;
     --card-bg: #fff;
     --card-title: #1d1d1f;
     --card-time: #6e6e73;
@@ -77,7 +77,7 @@ body[data-color-scheme="dark"] {
 
     --black: #fff;
     --black-2: rgb(204, 204, 204);
-    --black-4: rgb(153, 153, 153);
+    --black-4: rgb(204, 204, 204);
 
     --border-color: #8884;
 

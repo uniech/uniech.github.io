@@ -1,11 +1,10 @@
 .divider, hr {
     border: none;
-    border-top: 1px solid var(--white-1);
-    margin: 32px auto;
+    border-top: 1px solid rgb(55 53 53);
 }
 
 .divider {
-    margin: 64px auto;
+    margin: 1rem auto;
 }
 
 img {
@@ -14,6 +13,11 @@ img {
 
 ::marker {
     color: var(--black-4);
+}
+
+::selection {
+    background:#505050; 
+    color:#fff;
 }
 
 blockquote {
