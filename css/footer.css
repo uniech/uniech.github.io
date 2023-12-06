@@ -1,6 +1,7 @@
 footer {
     width: 100%;
     user-select: none;
+    margin-top: auto;
 }
 
 .inner {
@@ -33,13 +34,13 @@ footer .group {
 
 footer .title {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
     margin: 0;
     margin-bottom: 0.5rem;
 }
 
 footer .item {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.45;
     color: var(--footer-link-grey);
     display: block;

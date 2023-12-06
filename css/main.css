@@ -12,8 +12,8 @@ body {
 
 body {
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .cont_ttl01 {
@@ -51,9 +51,10 @@ a:visited {
 }
 
 .section-title {
-    font-size: 3rem;
+    font-size: 2rem;
+    font-weight: 400;
     text-align: right;
-    padding-bottom: 8rem;
+    padding: 0 2rem 8rem 0;
 }
 
 .theme-command {

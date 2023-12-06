@@ -60,7 +60,7 @@ nav .nav-item:hover, nav .nav-item:focus {
 
 @media screen and (max-width: 600px) {
     nav .nav-item {
-        padding: 0 8rem;
+        padding: 0 6rem;
     }
 }
 
@@ -195,7 +195,7 @@ body[data-color-scheme="dark"] nav .nav-item-search {
     nav .nav-arrow::after {
         transform-origin: 0% 100%;
         transform: rotate(-40deg) scaleY(1.5);
-        right: 3%;
+        left: 94%;
     }
     nav .nav-items {
         width: 100%;
