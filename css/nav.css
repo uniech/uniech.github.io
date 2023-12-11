@@ -190,12 +190,12 @@ body[data-color-scheme="dark"] nav .nav-item-search {
     nav .nav-arrow::before {
         transform-origin: 100% 100%;
         transform: rotate(40deg) scaleY(1.5);
-        right: 6%;
+        right: 7%;
     }
     nav .nav-arrow::after {
         transform-origin: 0% 100%;
         transform: rotate(-40deg) scaleY(1.5);
-        left: 94%;
+        left: 93%;
     }
     nav .nav-items {
         width: 100%;
