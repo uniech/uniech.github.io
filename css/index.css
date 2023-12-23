@@ -16,22 +16,18 @@
 }
 
 .hero .large {
-    float: right;
+    text-align: right;
 }
 
 .hero .bigtitle {
     width: 40%;
     align-self: end;
     padding-bottom: 1rem;
-    transition: all 2s cubic-bezier(0.32, 0.09, 0.65, 0.86);
 }
 
 @media screen and (max-width: 800px) {
     .hero .group {
         width: 100%;
-    }
-    .hero .sub {
-        font-size: 1rem;
     }
     .hero .bwc{
         top: 2px;
@@ -65,5 +61,5 @@
 }
 
 .hero .bigtitle:hover {
-    transform: rotateY(150deg);
+    stroke: white;
 }

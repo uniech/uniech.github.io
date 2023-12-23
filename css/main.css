@@ -17,9 +17,10 @@ body {
 }
 
 .cont_ttl01 {
-    font-size: 0.8rem;
-    line-height: 1rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
     font-weight: 400;
+    color: var(--black-4);
 } 
 
 a:link {
@@ -51,7 +52,7 @@ a:visited {
 }
 
 .section-title {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
     text-align: right;
     padding: 0 2rem 8rem 0;

@@ -3,9 +3,11 @@
 }
 
 .meta .type {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 400;
   padding-bottom: 8rem;
+  line-height: 1.2rem;
+  text-transform: uppercase;
 }
 
 .hover-title span {
