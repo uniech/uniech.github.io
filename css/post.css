@@ -4,6 +4,7 @@ body {
 
 .post {
   margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 
 .meta .categories {
@@ -26,39 +27,95 @@ body {
 .meta .title {
   font-size: 1rem;
   font-weight: 400;
-  padding-left: 1rem;
-  line-height: 1.2rem;
+  text-align: center;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
 .content {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .t-text {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  gap: 1.5rem;
+  display: grid; 
   width: 100%;
-  padding-bottom: 5rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 1.45;
+  text-align: justify;
+  grid-column: 2;
+  grid-template-columns: repeat(5,1fr);
 }
 
-.text-imgs {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+.t-subject {
+  grid-column: 2 / 4;
+  text-align: left;
 }
 
-.text-bigimg img{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+.t-year {
+  text-align: right;
 }
+
+.t-copywriter01 {
+  grid-column: 2 / 5;
+}
+
+.t-copywriter02 {
+  grid-column: 2 / 5;
+  line-height: 1.25;
+}
+
+.about-t {
+  grid-column: span 2;
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.galleryimg-s, .galleryimg-x, .galleryimg-y {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform;
+  height: 40vw;
+  transition: all 100ms ease;
+}
+
+.galleryimg-s {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.galleryimg-x {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.galleryimg-y {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.galleryimg-s img {
+  width: 25vw;
+  cursor: zoom-in;
+}
+
+.galleryimg-x img {
+  width: 35vw;
+  cursor: zoom-in;
+}
+
+.galleryimg-y img {
+  width: 20vw;
+  cursor: zoom-in;
+}
+
 
 .content p,
 .content h1,
@@ -376,14 +433,51 @@ body[data-color-scheme="dark"] .tags .icon {
 @media screen and (max-width: 600px) {
   .content {
     display: block;
+    padding: 0;
     /* @media 层级需要放在css样式表最下面，不然会被相同样式覆盖 */
   }
 
   .t-text {
-    grid-template-columns: 1fr;
+    padding-bottom: 3rem;
   }
 
-  .text-imgs {
-    grid-template-columns: 1fr;
+  .t-subject {
+    grid-column: 2 / 5;
+  }
+
+  .t-copywriter01, .t-copywriter02 {
+    grid-column: 2 / 6;
+  }
+
+  .t-year, .t-copywriter01, .t-copywriter02 {
+    padding-right: 1rem;
+  }
+
+  .about-t {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 1rem;
+  }
+
+  .galleryimg-s {
+    padding-left: 0;
+  }
+  
+  .galleryimg-s, .galleryimg-x, .galleryimg-y {
+    height: 40vh;
+    justify-content: flex-start;
+  }
+
+  .galleryimg-s img {
+    width: 25vh;
+  }
+  
+  .galleryimg-x img {
+    width: 35vh;
+  }
+  
+  .galleryimg-y img {
+    width: 20vh;
   }
 }

@@ -11,25 +11,15 @@ footer {
 
 footer .links {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    gap: 1.5rem;
-}
-
-@media screen and (max-width: 600px) {
-    footer .links {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    footer .links {
-        grid-template-columns: 1fr;
-    }
+    grid-template-columns: repeat(5,1fr);
 }
 
 footer .group {
     margin: 0;
-    margin-bottom: 2rem;
+}
+
+footer .group:last-child {
+    grid-column-start: 4;
 }
 
 footer .title {
@@ -40,8 +30,8 @@ footer .title {
 }
 
 footer .item {
-    font-size: 1rem;
-    line-height: 1.45;
+    font-size: 0.8rem;
+    line-height: 1.25;
     color: var(--footer-link-grey);
     display: block;
 }
@@ -90,4 +80,25 @@ footer .color-scheme-toggle label span {
 footer .color-scheme-toggle label input:checked+span {
     color: var(--white-txt-on-blue-bg);
     background-color: var(--blue);
+}
+
+@media screen and (max-width: 600px) {
+    footer .links {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 1rem;
+    }
+    footer .group:last-child {
+        grid-column-start: 2;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer .links {
+        grid-template-columns: 1fr 1fr;
+    }
+    footer .group:last-child {
+        grid-column-start: 2;
+        padding: 0;
+    }
 }

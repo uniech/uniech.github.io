@@ -1,26 +1,21 @@
 .post-list {
   user-select: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 1rem;
-  align-items: end;
-  grid-row-gap: 30vh;
-}
-
-@media screen and (max-width: 600px) {
-  .post-list {
-    grid-template-columns: 1fr;
-    grid-row-gap: 15vh;
-  }
+  grid-template-columns: repeat(5,1fr);
+  padding-top: 1rem;
 }
 
 .post-list-item {
   overflow: hidden;
+  grid-column: 4 / 4;
   width: 100%;
-  /* border-radius: 16px;
   background-color: var(--card-bg);
-  margin-bottom: 21px; */
   transition: all 200ms ease;
+}
+
+
+.post-list-item .title:hover {
+  color: rgb(0 0 0 / 35%); /* 当有元素被悬停时，将所有元素的颜色设置为淡灰色 */
 }
 
 /* 卡片盒子边距 */
@@ -46,10 +41,21 @@
     margin-left: 0;
     margin-right: 0;
   }
+
+  .post-list {
+    grid-template-columns: 1fr;
+    grid-row-gap: 1vh;
+  }
+
+  .post-list-item {
+    grid-column: 1;
+    padding: 0;
+  }
 }
 
 .post-list-item .cover-img {
   overflow: hidden;
+  display: none;
 }
 
 .post-list-item .cover-img img {
@@ -73,7 +79,6 @@
 }
 
 .post-list-item .content {
-    padding-top: 0.5rem;
     display: flex;
 }
 
@@ -83,8 +88,8 @@
 .post-list-item a:active,
 .post-list-item a:link,
 .post-list-item a:visited {
-    font-size: 0.9rem;
-    line-height: 1.1;
+    font-size: 0.8rem;
+    line-height: 1.4;
     text-transform: uppercase;
     text-decoration: none;
 }

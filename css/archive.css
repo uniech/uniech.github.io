@@ -6,22 +6,21 @@
   font-size: 1rem;
   font-weight: 400;
   padding-bottom: 8rem;
-  line-height: 1.2rem;
   text-transform: uppercase;
+  text-align: right;
 }
 
 .hover-title span {
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 450;
   position: relative;
-  bottom: 0.2rem;
+  bottom: 0.25rem;
   transition: 0.35s;
 }
 
 .hover-title {
   display: block;
   pointer-events: auto;
-  cursor: pointer;
   font-size: 4rem;
   font-weight: 400;
   color: var(--black-2);
@@ -37,7 +36,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  font-family: "Questrial", Noto Sans SC, sans-serif;
+  font-family: "TASAOrbiterVF", Noto Sans SC, sans-serif;
   /* display: grid;
   grid-template-columns: 5% 90% 5%;
   align-items: baseline;
@@ -48,6 +47,7 @@
   opacity: 0;
   position: absolute;
   width: 2.8rem;
+  display: flex;
   transform: translate(-20px,0%);
   transition: all .25s ease-in-out;
 }
@@ -102,7 +102,7 @@ body:not(.mobile) .hover-title:hover ~ .hover-image {
   }
 
   .hover-title span {
-    font-size: 1.15rem;
+    font-size: 1.3rem;
     position: relative;
     bottom: 0.1rem;
   }
@@ -118,7 +118,6 @@ body:not(.mobile) .hover-title:hover ~ .hover-image {
 
   .hover-title2 {
     width: 1rem;
-    padding-top: 0.23rem;
   }
   
   body:not(.mobile) .hover-title:hover ~ .hover-image {
