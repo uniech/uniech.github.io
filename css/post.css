@@ -19,11 +19,6 @@ body {
   text-decoration: none;
 }
 
-.meta .date {
-  color: var(--grey);
-  font-weight: 600;
-}
-
 .meta .title {
   font-size: 1rem;
   font-weight: 400;
