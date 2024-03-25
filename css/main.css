@@ -16,10 +16,10 @@ body {
     flex-direction: column;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'TASAOrbiterVF';
     src: url('../fonts/TASAOrbiterVF.woff2') format('woff2'),
-}
+} */
 
 /* 圆形跟随鼠标交互 */
 #cursor {
