@@ -7,18 +7,13 @@ body {
     padding: 0;
     color: var(--black-2);
     background-color: var(--body-bg);
-    font-family: "TASAOrbiterVF", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-}
-
-@font-face {
-    font-family: 'TASAOrbiterVF';
-    src: url('../fonts/TASAOrbiterVF.woff2') format('woff2'),
 }
 
 /* 圆形跟随鼠标交互 */

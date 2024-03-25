@@ -83,6 +83,51 @@ class Cursor {
 // 圆形跟随鼠标交互
 
 
+// 图片放大
+document.addEventListener('DOMContentLoaded', function() {
+  const imageContainers = document.querySelectorAll('.galleryimg-s, .galleryimg-x, .galleryimg-y');
+  
+  imageContainers.forEach(function(imageContainer) {
+    imageContainer.addEventListener('click', function() {
+      const img = imageContainer.querySelector('img');
+      const existingOverlay = document.querySelector('.overlay');
+      
+      if (existingOverlay) {
+        existingOverlay.remove();
+        return;
+      }
+      
+      showOverlay(img.src);
+    });
+  });
+
+  function showOverlay(imgSrc) {
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlay');
+    document.body.appendChild(overlay);
+
+    const overlayImg = document.createElement('img');
+    overlayImg.src = imgSrc;
+    overlay.appendChild(overlayImg);
+
+    const closeBtn = document.createElement('span');
+    closeBtn.classList.add('close-btn');
+    closeBtn.innerHTML = '&times;';
+    overlay.appendChild(closeBtn);
+
+    overlay.style.display = 'block';
+
+    closeBtn.addEventListener('click', function() {
+      overlay.remove();
+    });
+
+    overlay.addEventListener('click', function() {
+      overlay.remove();
+    });
+  }
+});
+// 图片放大
+
 // 使用 JavaScript 以实现只有被悬停的元素保持黑色
 const items = document.querySelectorAll('.post-list-item .title');
 

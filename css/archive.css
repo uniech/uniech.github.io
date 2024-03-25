@@ -36,11 +36,8 @@
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  font-family: "TASAOrbiterVF", Noto Sans SC, sans-serif;
-  /* display: grid;
-  grid-template-columns: 5% 90% 5%;
-  align-items: baseline;
-  grid-auto-flow: column; */
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  letter-spacing: -.03rem;
 }
 
 .hover-title2 {
