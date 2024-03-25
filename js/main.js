@@ -87,9 +87,9 @@ class Cursor {
 document.addEventListener('DOMContentLoaded', function() {
   const imageContainers = document.querySelectorAll('.galleryimg-s, .galleryimg-x, .galleryimg-y');
   
-  imageContainers.forEach(function(imageContainer) {
-    imageContainer.addEventListener('click', function() {
-      const img = imageContainer.querySelector('img');
+  for (let i = 0; i < imageContainers.length; i++) {
+    imageContainers[i].addEventListener('click', function() {
+      const img = imageContainers[i].querySelector('img');
       const existingOverlay = document.querySelector('.overlay');
       
       if (existingOverlay) {
@@ -99,11 +99,11 @@ document.addEventListener('DOMContentLoaded', function() {
       
       showOverlay(img.src);
     });
-  });
+  }
 
   function showOverlay(imgSrc) {
     const overlay = document.createElement('div');
-    overlay.classList.add('overlay');
+    overlay.className = 'overlay';
     document.body.appendChild(overlay);
 
     const overlayImg = document.createElement('img');
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
     overlay.appendChild(overlayImg);
 
     const closeBtn = document.createElement('span');
-    closeBtn.classList.add('close-btn');
+    closeBtn.className = 'close-btn';
     closeBtn.innerHTML = '&times;';
     overlay.appendChild(closeBtn);
 
